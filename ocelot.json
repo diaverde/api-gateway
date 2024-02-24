@@ -1,0 +1,72 @@
+{
+  "Routes": [
+    // User
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44328
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+    },
+    // Station
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 62975
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+    },
+    // Container
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44358
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+    },
+    // Dashboard
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44343
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+    },
+    // Alert
+    {
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44309
+        }
+      ],
+      "UpstreamPathTemplate": "/api/{everything}",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET", "DELETE" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  }
+}
